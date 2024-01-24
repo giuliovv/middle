@@ -20,7 +20,8 @@ class SearchResultPage extends StatelessWidget {
   Future<Map<String, dynamic>> fetchResults(
       String flyFrom, String flyTo, DateTimeRange departureDate) async {
     const String tequilaEndpoint = "https://api.tequila.kiwi.com/v2/search";
-    String tequilaApiKey = dotenv.env['API_KEY']!;
+    String tequilaApiKey = "IgGcMhwu7VqPJEfGjIyg8FJzzwAe0E92";
+    // dotenv.env['API_KEY']!;
     final Map<String, String> headers = {"apikey": tequilaApiKey};
     String dayString = "";
 
