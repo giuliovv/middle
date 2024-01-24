@@ -92,7 +92,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   labelText: 'Your City',
                   border: OutlineInputBorder(),
                 ),
-                items: <String>['ZRH', 'LON'].map((String value) {
+                items: <String>['ZRH', 'LON', 'VIE', 'MAD', 'VCE']
+                    .map((String value) {
                   return DropdownMenuItem<String>(
                     value: value,
                     child: Text(value),
@@ -109,7 +110,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   labelText: 'Friend\'s City',
                   border: OutlineInputBorder(),
                 ),
-                items: <String>['ZRH', 'LON'].map((String value) {
+                items: <String>['ZRH', 'LON', 'VIE', 'MAD', 'VCE']
+                    .map((String value) {
                   return DropdownMenuItem<String>(
                     value: value,
                     child: Text(value),
