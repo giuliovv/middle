@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
-import 'package:flutter_dotenv/flutter_dotenv.dart';
+import '../auth/secrets.dart';
 
 class SearchResultPage extends StatelessWidget {
   final String? city1;
@@ -20,8 +20,6 @@ class SearchResultPage extends StatelessWidget {
   Future<Map<String, dynamic>> fetchResults(
       String flyFrom, String flyTo, DateTimeRange departureDate) async {
     const String tequilaEndpoint = "https://api.tequila.kiwi.com/v2/search";
-    String tequilaApiKey = "IgGcMhwu7VqPJEfGjIyg8FJzzwAe0E92";
-    // dotenv.env['API_KEY']!;
     final Map<String, String> headers = {"apikey": tequilaApiKey};
     String dayString = "";
 

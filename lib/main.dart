@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'searchResult/search_result_page.dart';
-import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-Future main() async {
-  // await dotenv.load(fileName: ".env");
+void main() {
   runApp(const MyApp());
 }
 
@@ -92,7 +90,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   labelText: 'Your City',
                   border: OutlineInputBorder(),
                 ),
-                items: <String>['ZRH', 'LON', 'VIE', 'MAD', 'VCE']
+                items: <String>['ZRH', 'LON', 'VIE', 'MAD', 'VCE', 'BLQ']
                     .map((String value) {
                   return DropdownMenuItem<String>(
                     value: value,
@@ -110,7 +108,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   labelText: 'Friend\'s City',
                   border: OutlineInputBorder(),
                 ),
-                items: <String>['ZRH', 'LON', 'VIE', 'MAD', 'VCE']
+                items: <String>['ZRH', 'LON', 'VIE', 'MAD', 'VCE', 'BLQ']
                     .map((String value) {
                   return DropdownMenuItem<String>(
                     value: value,
